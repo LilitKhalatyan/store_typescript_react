@@ -1,0 +1,29 @@
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+
+const verifyIt = (req, res, next) => {
+  try {
+    console.log(req.headers.authorization, "//////////////////////////////");
+    const token = req.headers.authorization.split("Bearer=")[1];
+
+    console.log(token, ":::::::::::::::::::::::::::::::::::::::::::::::::::::");
+    if (!token) {
+      return res.status(401).json({ message: "No valid tocken is provided!" });
+    }
+    jwt.verify(token, process.env.secretKey, (err, decoded) => {
+      if (err) {
+        catchError(err, res);
+        return;
+      }
+      (req.userId = decoded.id),
+        console.log("V E R I F I E D ------------------------");
+      next();
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+module.exports = {
+  verifyIt,
+};

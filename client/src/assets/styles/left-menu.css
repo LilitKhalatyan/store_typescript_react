@@ -1,0 +1,19 @@
+.left-menu-wrapper {
+  background-color:#063057;
+  width: 187px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+i {
+  padding-inline: 5px;
+}
+
+hr {
+  width: 100%;
+}

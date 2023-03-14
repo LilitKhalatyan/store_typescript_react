@@ -1,0 +1,14 @@
+.main-layout {
+    width: 100%;
+    height: calc(100% - 67px);
+    display: flex;
+}
+
+.main-layout-outlet {
+    padding: 20px;
+    width: calc(100% - 187px);
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

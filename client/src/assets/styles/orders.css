@@ -1,0 +1,99 @@
+.orders-wrapper {
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.orders-top-wrapper {
+  height: 67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orders-top-left, .top-select-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+}
+
+select {
+  width: 118px;
+  height: 32px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen  and (max-width: 1100px) {
+  .orders-top-wrapper, .orders-top-left {
+    flex-direction: column;
+    height: 90px;
+  }
+  select{
+    width: 90px;
+  }
+}
+
+.orders-date {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  height: 32px;
+}
+
+h1 {
+  padding-inline-start: 20px;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 500px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+@media only screen  and (max-width: 1100px) {
+  select{
+    width: 90px;
+  }
+}
+
+.orders-pagination {
+  padding: 20px;
+  margin-bottom: 10px;
+  height: 45px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+@media only screen  and (max-width: 1100px) {
+  .orders-pagination{
+    padding: 5px;
+    flex-direction: column;
+  }
+}

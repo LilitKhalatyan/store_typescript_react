@@ -1,0 +1,42 @@
+
+.header {
+    height: 67px;
+    padding-inline: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.096);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-search-box {
+    padding-inline: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.096);
+}
+
+.header-search {
+    border: none;
+    outline: none;
+    padding-inline: 5px;
+
+}
+
+.fa-magnifying-glass {
+    padding-inline: 5px;
+    font-size: 120%;
+}
+
+.fa-bell {
+    padding-inline: 5px;
+    font-size: 180%;
+}
+
+.logout {
+    padding-inline: 5px;
+    font-size: 160%;
+}
